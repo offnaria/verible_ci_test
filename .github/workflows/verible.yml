@@ -8,5 +8,8 @@ jobs:
     - uses: actions/checkout@master
     - uses: chipsalliance/verible-linter-action@main
       with:
+        paths: |
+          .
+          ./src
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
